@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textColor="#ff2796ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:text="Demo Read And Whrite File"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:paddingTop="5dp"
+        android:gravity="top|left"
+        android:hint="Nhập văn bản"
+        android:textColor="#000"
+        android:textColorHint="#3e000000"
+        android:inputType="textMultiLine"
+        android:background="#ffd4ff9e"
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRead"
+            android:text="Load"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnWrite"
+            android:text="Save"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
